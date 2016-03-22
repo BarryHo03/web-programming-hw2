@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration</title>
+</head>
+
+<body>
+	<form>
+		<fieldset>
+			<legend>報名資料</legend>
+			<label for="name">姓名：</label>
+			<input name="name" id="name" type="text" placeholder="您的姓名" maxlength="10" required/>
+			<br>
+			<p>
+			學院：
+			<select required>
+				<option value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+ 				<option value="Science">理學院</option>
+				<option value="Chinese">文學院</option>
+				<option value="Entrepreneur">商學院</option>
+				<option value="Inter">國際事務學院</option>
+				<option value="Society">社會科學學院</option>
+				<option value="Lax">法學院</option>
+				<option value="Language">外國語文學院</option>
+				<option value="Media">傳播學院</option>
+				<option value="Education">教育學院</option>
+			</select>
+			</p>
+			<label for="phone">手機號碼：</label>
+			<input name="phone" id="phone" type="text" placeholder="0910123456" maxlength="10" required pattern="[0-9]{10}"/>
+			<br>
+			<label for="email">電子信箱：</label>
+			<input name="email" id="email" type="email" placeholder="you@somewhere.com" required/>
+			<br>
+			<label for="birth">生日：</label>
+			<input name="birth" id="birth" type="date" />
+		</fieldset>
+		<br>
+		<div>
+			<input type="submit" value="Submit"/>
+		</div>
+	</form>
+</body>
+</html>
